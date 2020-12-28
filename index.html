@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Podcast Acamica</title>
+</head>
+<body>    
+    <header>
+        <nav class="menu">
+            <figure class="logo_menu"> <img alt="logo" src="img/logo.svg" width="36" > </figure>
+            <input type="checkbox" id="checkbox_menu">
+            <ul class="items-menu">
+                <li><a href="#episodios" class="item-menu">Episodios</a></li>
+                <li><a href="#nosotros"  class="item-menu">Nosotros</a></li>
+                <li><a href="#entrevistas" tabindex="5" class="item-menu">Entrevistas</a></li>
+                <li><a href="#topicos" tabindex="6" class="item-menu">Tópicos</a></li>
+            </ul>
+            <label for="checkbox_menu" class="label-burg" tabindex="2">☰</label>
+            <label for="checkbox_menu" class="label-equis">&#x2716;</label>
+        </nav>
+    </header>
+    <main>
+        <section class="titulo_podcast">
+            <h1 class="titulo_h1"> Hello <del>world</del> pale blue dot<span id="punto">.</span></h1>
+            <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <div class="botones titulo_boton">
+                <button class="boton">CONOCÉ MÁS</button>
+            </div>
+        </section>
+        <section class="episodios" id="episodios">
+            <h2 class="episodios_h2">Episodios</h2>
+            <div class="episodios_podcast">
+                <iframe  class="podcast" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"></iframe>
+                <iframe  class="podcast" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"></iframe>
+                <iframe  class="podcast" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"></iframe>
+                <iframe  class="podcast" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"></iframe>
+            </div>
+        </section>
+        <section class="telefono" id="nosotros">
+            <img class="telefono_img" src="img/phone.png" alt="celular">
+            <div class="telefono_info">
+                <h2 class="telefono_h2">De dónde venimos</h2>
+                <p class="telefono_p">Our posturings, our imagined self-importance, the delusion that we have some privileged position 
+                    in the Universe, are challenged by this point of pale light. </p>
+                <br>
+                <p class="telefono_p">Our planet is a lonely speck in the great enveloping cosmic dark. In
+                    our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+            </div>
+        </section>
+        <section class="invitados" id="entrevistas">
+            <h2 class="invitados_h2">Invitadas/os estelares</h2>
+            <div class="invitados_img">
+                <img class="invitado" src="img/graceHopper.png" alt="Grace_Hopper" >
+                <img class="invitado" src="img/KatieBouman.png" alt="Katie_Bouman" >
+                <img class="invitado" src="img/MargaretHamilton.png" alt="Margaret_Hamilton" >
+                <img class="invitado" src="img/AnE.R.A.Univac1103ComputerInThe1950s.png" alt="computador_1950" >
+                <img class="invitado" src="img/ComputerOperatorsWithAnEniac—TheWorld’sFirstProgrammableGeneralPurposeComputer.png" alt="computador_programable" >
+                <img class="invitado" src="img/susan-kare.png" alt="Susan_Kare" >
+            </div>
+        </section>
+        <section class="temas" id="topicos">
+            <h2 class="temas_h2">Algunos de nuestros temas</h2>
+            <div class="temas_info">
+                <figure class="icono">
+                    <img class="icono_imagen" id="Trabajo_remoto" src="/img/icon1.svg" alt= "Trabajo remoto">
+                    <figcaption class="icono_nombre"> Trabajo remoto</figcaption>
+                </figure>
+                <figure class="icono">
+                    <img class="icono_imagen" id="RepensandoLaProgramacion" src="/img/icon2.svg" alt="programación">
+                    <figcaption class="icono_nombre"> Repensando la programación</figcaption>
+                </figure> 
+                <figure class="icono">
+                    <img class="icono_imagen" id="icono_imagen_computador" src="/img/icon3.svg" alt="computador">
+                    <figcaption class="icono_nombre"> Bases del código</figcaption>
+                </figure>
+                <figure class="icono">
+                    <img class="icono_imagen" id="SeguridadInformatica" src="/img/icon4.svg" alt="informatica">
+                    <figcaption class="icono_nombre"> Seguridad informática</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="novedades">
+            <h2 class="novedades_h2">¿Quieres las últimas novedades?</h2>
+            <button class="boton novedades_boton">ESCUCHÁ LOS EPISODIOS</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer_p"> © 2019 — Hello blue pale dot</p>
+        <div class="icons">
+            <a href="https://www.twitter.com" > <img src="/img/002-twitter.svg" class="icon" alt="twitter"></a>
+            <a href="https://www.whatsapp.com/"> <img src="/img/003-whatsapp.svg" class="icon" alt="whatsapp"></a>
+            <a href="https://www.pscp.tv/"> <img src="/img/007-periscope.svg" class="icon" alt="periscope"></a>
+            <a href="https://www.apple.com/co/itunes/"> <img src="/img/009-itunes.svg" class="icon" alt="itunes"></a>
+            <a href="https://www.reddit.com/"> <img src="/img/015-reddit.svg" class="icon" alt="reddit"></a>
+            <a  href="https://www.spotify.com" target="_blank"><i class="icon fa fa-spotify"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

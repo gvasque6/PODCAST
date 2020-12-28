@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400&family=IBM+Plex+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border:0px;
+}
+
+
+
+h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #060A24;
+  letter-spacing: 0;
+}
+
+
+h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #060A24;
+  letter-spacing: 0;
+}
+
+
+p {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #060A24;
+  letter-spacing: 0;
+}
+
+body{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.telefono {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.invitados{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+
+/*1 sección menu*/
+.menu{
+  min-width: 320px;
+  min-height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.tachado {
+  text-decoration: line-through;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  text-decoration: none;
+  display: inline;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-transform: uppercase;
+  -webkit-transition: color 2s;
+  transition: color 2s;
+}
+
+li a:hover {
+  color:#00F3BB;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+li a:active {
+  color: rgba(6,10,36,0.56);
+  text-decoration: line-through;
+}
+
+.boton {
+  background-color: #00F3BB;
+  border: 0px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  cursor: pointer;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.boton:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #FFFFFF;
+}
+
+/*2 sección titulo*/
+
+.titulo_podcast span{
+  color: #0000EC;
+}
+
+/*3 sección episodios*/
+
+.episodios,
+.episodios_podcast {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  width: 100%;
+  
+}
+
+.episodios_h2 {
+  padding-top: 56px;
+  color: #FFFFFF;
+  font-weight: 200;
+  font-size: 48px;
+}
+
+.episodios {
+  z-index: 0;
+}
+
+.podcast {
+  border-width: 0px;
+}
+
+/*3 sección telefono*/
+
+.telefono_img{
+  width: 100%;
+  min-width: 320px;
+  min-height: 519px;
+}
+
+.telefono {
+  position: relative;
+  z-index: 1;
+  top: -95.5px;
+}
+
+.telefono_p{
+  text-align: justify;
+}
+
+/*4 sección invitados*/
+.invitado{
+  width: 100%;
+  min-width: 320px;
+  min-height: 243px;
+  margin: 0px;
+}
+
+
+.invitados_img{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/*5 sección temas*/
+.temas{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.icono_nombre {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+}
+
+.icono_imagen {
+  height: 104px;
+}
+
+/*6 sección: novedades*/
+
+.novedades{
+  position: relative;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+
+.novedades_h2,
+.novedades{
+  text-align: center;
+}
+
+.novedades_h2{
+  color: #FFFFFF;
+  margin-top: 64px;
+}
+
+
+/*7 sección: footer*/
+.icons{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.icon {
+  height: 28px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.label-equis {
+  display: none;
+}
+
+/*svg*/
+.episodios__svg,
+.novedades__svg,
+.episodios__svg2 {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  top: -1px;
+}
+
+.episodios__svg2 {
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  top: 88%;
+}
+
+.novedades__svg {
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  height: 30px;
+}
+
+@-webkit-keyframes rotate-scale-down-diag-2 {
+  0% {
+    -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+    transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+  }
+}
+
+@keyframes rotate-scale-down-diag-2 {
+  0% {
+    -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+    transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+  body {
+    min-width: 320px;
+  }
+  h1,
+  h2 {
+    font-size: 36px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  ul {
+    height: 224px;
+  }
+  li {
+    margin: 24px;
+  }
+  li a {
+    color: #FFFFFF;
+    margin: 16px;
+  }
+  .label-burg,
+  .label-equis {
+    cursor: pointer;
+    padding-top: 16px;
+  }
+  .telefono {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    top: -95.5px;
+  }
+  .episodios {
+    -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+    clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+  }
+  .novedades{
+    -webkit-clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
+  }
+  #checkbox_menu,
+  .items-menu {
+    display: none;
+  }
+  .logo {
+    padding-top: 10px;
+    padding-left: 16px;
+  }
+  .items-menu {
+    position: absolute;
+    top: 84%;
+    background-color: #0000EC;
+    color: #FFFFFF;
+    min-width: 320px;
+    width: 100%;
+  }
+  #checkbox_menu:checked ~ .items-menu,
+  #checkbox_menu:checked ~ .label-equis {
+    display: block;
+  }
+  #checkbox_menu:checked ~ .label-burg {
+    display: none;
+  }
+  .menu {
+    padding-left: 16px;
+    padding-right: 19px;
+  }
+  .boton {
+    font-size: 16px;
+    margin: 16px;
+    height: 48px;
+    min-width: 288px;
+    min-height: 48px;
+  }
+  .botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .titulo_podcast {
+    padding-left: 16px;
+  }
+  .invitados_img{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .imagen-phone {
+    margin-bottom: 27px;
+  }
+  .invitados_h2 {
+    margin-bottom: 14px;
+  }
+  .episodios {
+    padding-bottom: 143.5px;
+  }
+  .podcast {
+    border-width: 0px;
+    width: 100%;
+    height: 232px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-bottom: 11px;
+    z-index: 1;
+  }
+  .temas {
+    padding-bottom: 42px;
+    margin-top: 48px;
+  }
+  .novedades_boton{
+    margin: 36px 16px 0px 16px;
+  }
+  .temas_h2{
+    margin-bottom: 24px;
+  }
+  .icono_nombre{
+    margin-left: 16px;
+    margin-bottom: 36px;
+  }
+  .icono_imagen{
+    margin-left: 108px;
+    margin-right: 108px;
+    margin-bottom: 13px;
+  }
+  .novedades {
+    padding: 0px 16px 67px 16px;
+  }
+  .footer_p{
+    text-align: center;
+  }
+  .icono{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer {
+    padding: 24px 45px 31px 24px;
+  }
+  .icon {
+    width: 16px;
+  }
+  
+  .fa {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 781px) {
+  
+  .logo {
+    height: 36px;
+    width: 36px;
+  }
+  h1 {
+    font-size: 64px;
+  }
+ 
+  h2 {
+    font-size: 48px;
+    margin-left: 200px;
+  }
+  .episodios_h2 {
+    margin-bottom: 26px;
+    position: relative;
+    top: 140px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 628px;
+  }
+  ul {
+    height: 80px;
+  }
+  li {
+    margin: 2px 24px 0px 24px;
+  }
+  li a {
+    color: #060A24;
+  }
+  .items-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  
+  
+  .invitados{
+    max-width: 1440px;
+  }
+  .telefono {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .episodios {
+    -webkit-clip-path: polygon(0 20%, 100% 0%, 100% 81%, 0% 100%);
+            clip-path: polygon(0 20%, 100% 0%, 100% 81%, 0% 100%);
+    height: 1042.6px;
+  }
+  .novedades {
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .telefono_info {
+    margin-left: 62.4px;
+    margin-top: 20.4px;
+  }
+  .telefono_h2 {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .invitados_h2 {
+    margin-top: 64px;
+    margin-bottom: 36px;
+  }
+  #checkbox_menu,
+  .label-burg {
+    display: none;
+  }
+  .menu{
+    padding: 22px 100px;
+  }
+  .boton {
+    font-size: 18px;
+    margin-top: 56px;
+    margin-bottom: 191px;
+    height: 56px;
+    width: 226px;
+    height: 56px;
+  }
+  .botones-ini {
+    height: 113px;
+  }
+  .titulo_podcast{
+    margin-left: 200px;
+    margin-top: 120px;
+  }
+  .episodios_podcast {
+    top: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 100px 64px 100px;
+  }
+  .podcast{
+    border-width: 0px;
+    width: 40.6%;
+    height: 232px;
+    padding: 0px 72px 72px 0px;
+  }
+  .telefono_img {
+    max-width: 457.6px;
+    max-height: 660px;
+  }
+  .invitado{
+    max-width: 480px;
+    max-height: 364px;
+  }
+  .invitados_img{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .temas{
+    margin-top: 64px;
+    margin-bottom: 34px;
+  }
+  .label-svg {
+    max-width: 220px;
+    max-height: 64px;
+    padding: 29px 20px 0px 20px;
+  }
+  .icono_imagen{
+    margin: 13px 78px;
+  }
+  .icono{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .temas_info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 200px;
+  }
+  
+  .temas_h2{
+    margin: 64px 0 56px 200px;
+  }
+  .novedades {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 518px;
+  }
+  .novedades_h2{
+    margin-left: 0px;
+  }
+  .novedades_boton {
+    margin-top: 36px;
+    margin-bottom: 0px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+        align-self: center;
+    width: 345px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 95px;
+    padding: 0px 100px;
+  }
+  .icon {
+    width: 18px;
+    padding-left: 36px;
+  }
+}
